@@ -1,4 +1,4 @@
 # mirthu-online-class
-Please install Microsoft Edge and login with kids ID
+Sign out from all google ID and Login with kids ID from any browser and browse https://mirthu-online-class.000webhostapp.com/
 
-https://www.microsoft.com/en-us/edge
+
