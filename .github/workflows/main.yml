@@ -25,7 +25,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.samkirkland.com
+        server: files.000webhost.com
         username: mirthu-online-class
         password: password@123
         server-dir: public_html/
