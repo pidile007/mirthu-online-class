@@ -33,5 +33,6 @@ jobs:
           ftpUsername: mirthu-online-class
           ftpPassword: password@123
           dest: public_html/
+          dryRun: false
     
       
