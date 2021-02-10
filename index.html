@@ -55,17 +55,27 @@
         <span class="lni-menu"></span>
         <span class="lni-menu"></span>
       </button>
-      <a href="https://www.vivekamschoolcbse.edu.in" target="_blank class="navbar-brand"><img src="assets/img/vivekam6.png" width="200" height="50" align="right" alt=""></a> <a href="index.html"><img src="assets/img/DM.JPG" class="img-round" width="150" height="150" alt=""></a>
+      <a href="https://www.vivekamschoolcbse.edu.in" target="_blank class="navbar-brand"><img src="assets/img/vivekam6.png" width="200" height="50" align="right" alt=""></a>
     </div>
 
 
-    <h5><b>Time:</b></h5><h5 id="txt"></h5>
+    <br><br><h5><b>Time:</b></h5><h5 id="txt"></h5>
     <br><h5><b>Date:</b></h5>
     <h5 id="demo"></h5>
     <script>
       var d = new Date();
       document.getElementById("demo").innerHTML = d.toLocaleDateString();;
       </script>
+    <br><h5><b>Day:</b></h5>
+    <h5 id="daydemo"></h5>
+    <script>
+      var today = new Date();
+      var day = today.getDay();
+      var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+      document.getElementById("daydemo").innerHTML = (daylist[day]);;
+      </script>
+
+
 
     <section id="services" class="section-padding" >
       <div class="container">
@@ -86,7 +96,7 @@
               <div class="icon">
                 <i class="lni-book"></i>
               </div>
-              <h3><a href="https://meet.google.com/ece-sbfy-bbv?pli=1&authuser=0" target="_blank">English</a></h3>
+              <h3><a href="https://meet.google.com/ece-sbfy-bbv?pli=1&authuser=0" target="_blank">English</a><p>ece-sbfy-bbv</p></h3>
             </div>
           </div> 
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="300">
@@ -94,7 +104,7 @@
               <div class="icon">
                 <i class="lni-bullhorn"></i>
               </div>
-              <h3><a href="https://meet.google.com/epe-wbgw-fxd?pli=1&authuser=0" target="_blank">தமிழ்</a></h3>
+              <h3><a href="https://meet.google.com/epe-wbgw-fxd?pli=1&authuser=0" target="_blank">தமிழ்</a><p>epe-wbgw-fxd</p></h3>
             </div>
           </div> 
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -102,7 +112,7 @@
               <div class="icon">
                 <i class="lni-bullhorn"></i>
               </div>
-              <h3><a href="https://meet.google.com/fgb-axtk-ibn?pli=1&authuser=0" target="_blank">हिन्दी</a></h3>
+              <h3><a href="https://meet.google.com/fgb-axtk-ibn?pli=1&authuser=0" target="_blank">हिन्दी</a><p>fgb-axtk-ibn</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -110,7 +120,7 @@
               <div class="icon">
                 <i class="lni-bulb"></i>
               </div>
-              <h3><a href=https://meet.google.com/edd-imzr-qxq?pli=1&authuser=0" target="_blank">Maths</a></h3>
+              <h3><a href=https://meet.google.com/edd-imzr-qxq?pli=1&authuser=0" target="_blank">Maths</a><p>edd-imzr-qxq</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -118,7 +128,7 @@
               <div class="icon">
                 <i class="lni-brush"></i>
               </div>
-              <h3><a href="https://meet.google.com/cms-uiau-uye?pli=1&authuser=0" target="_blank">Art</a></h3>
+              <h3><a href="https://meet.google.com/cms-uiau-uye?pli=1&authuser=0" target="_blank">Art</a><p>cms-uiau-uye</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -135,7 +145,7 @@
     <br><h2 class="section-title">
       Time Table
     </h2>
-    <br><img src="assets/img/time_table.jpg" alt="" class="center">
+    <br><img src="assets/img/time_table.jpg"  alt="assets/img/time_table-bu.jpg" class="center">
 
 
      
@@ -146,8 +156,9 @@
         <div class="row">
           <div class="col-md-12">
             <div class="footer-text text-center">
-              <p>Copyright © 2020 | D S M</p>
-              <p>v 1.0</p>
+              <p>Copyright © 2020 - 2021 | D S M</p>
+              <a href="index.html"><img src="assets/img/DM.JPG" class="img-round" width="100" height="100" alt=""></a>
+              <p>v 1.1</p>
             </div>
           </div>
         </div>
