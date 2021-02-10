@@ -34,6 +34,6 @@ jobs:
           password: password@123
           port: 21
           protocol: ftp
-          local-dir: /
+          local-dir: $GITHUB_WORKSPACE/
           server-dir:  public_html/
       
