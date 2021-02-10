@@ -27,13 +27,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Upload to webhostapp
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: files.000webhost.com
-          username: mirthu-online-class
-          password: password@123
-          port: 21
-          protocol: ftp
-          local-dir: $GITHUB_WORKSPACE/
-          server-dir:  public_html/
+        run: ls 
+    
       
