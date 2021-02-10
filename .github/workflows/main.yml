@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Upload to webhostapp
-      - uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: files.000webhost.com
           username: mirthu-online-class
