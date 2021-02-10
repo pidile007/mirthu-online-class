@@ -29,6 +29,6 @@ jobs:
       - name: Upload to webhostapp
         run: |
           pwd
-          ls
+          ls /home/runner/work/mirthu-online-class/mirthu-online-class
     
       
