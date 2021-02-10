@@ -27,8 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Upload to webhostapp
-        run: |
-          pwd
-          ls /home/runner/work/mirthu-online-class/mirthu-online-class
+        uses: zinh/ftp-uploader-action@v0.4
+        with:
+          ftpHostname: files.000webhost.com
+          ftpUsername: mirthu-online-class
+          ftpPassword: password@123
+           dest: public_html/
     
       
