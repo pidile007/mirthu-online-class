@@ -27,7 +27,7 @@ jobs:
       with:
         server: files.000webhost.com
         username: mirthu-online-class
-        password: password@123
+        password: ${{ secrets.ftp_password }}
         server-dir: public_html/
     
       
