@@ -33,6 +33,7 @@ jobs:
           username: mirthu-online-class
           password: password@123
           port: 21
+          local-dir: /home/runner/work/mirthu-online-class/mirthu-online-class/
           server-dir: public_html/
     
       
