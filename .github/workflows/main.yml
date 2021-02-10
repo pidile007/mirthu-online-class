@@ -32,6 +32,6 @@ jobs:
           ftpHostname: files.000webhost.com
           ftpUsername: mirthu-online-class
           ftpPassword: password@123
-           dest: public_html/
+          dest: public_html/
     
       
