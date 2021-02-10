@@ -27,7 +27,7 @@ jobs:
       with:
         server: ftp.samkirkland.com
         username: mirthu-online-class
-        password: ${{ secrets.ftp_password }}
+        password: password@123
         server-dir: public_html/
     
       
