@@ -27,12 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Upload to webhostapp
-        uses: zinh/ftp-uploader-action@v0.4
+        uses: sebastianpopp/ftp-action@v2.0.0
         with:
-          ftpHostname: files.000webhost.com
-          ftpUsername: mirthu-online-class
-          ftpPassword: password@123
-          dest: public_html/
-          dryRun: false
+          host: files.000webhost.com
+          user: mirthu-online-class
+          password: password@123
+          remoteDir: public_html/
     
       
