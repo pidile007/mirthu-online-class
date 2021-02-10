@@ -15,25 +15,19 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      
-
-      # Runs a single command using the runners shell
-      - name: Upload to webhostapp
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: files.000webhost.com
-          username: mirthu-online-class
-          password: password@123
-          port: 21
-          local-dir: /home/runner/work/mirthu-online-class/mirthu-online-class/
-          server-dir: public_html/
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2.3.2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      with:
+        server: ftp.samkirkland.com
+        username: mirthu-online-class
+        password: ${{ secrets.ftp_password }}
+        server-dir: public_html/
     
       
