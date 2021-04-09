@@ -29,6 +29,13 @@ jobs:
         username: mirthu-online-class
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
-      
+        
+    - name: Deploy Docker Image to Heroku     
+      uses: techmmunity/docker-heroku-deploy@v1.0.0
+      with:
+        email: pidile007@gmail.com
+        api_key: ${{ secrets.heroku_api_key }}
+        app_name: mirthu-online-class
+
     
       
