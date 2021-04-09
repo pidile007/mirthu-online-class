@@ -35,7 +35,7 @@ jobs:
       with:
         email: pidile007@gmail.com
         api_key: ${{ secrets.heroku_api_key }}
-        app_name: mirthu-online-class
+        app_name: online-class-container
 
     
       
