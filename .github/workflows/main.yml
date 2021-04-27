@@ -35,6 +35,8 @@ jobs:
       run: |
         mkdir s3-upload
         cd ../
+        ls
+        pwd
         cp -rf * s3-upload       
         
     - name: Upload S3
