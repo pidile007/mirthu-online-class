@@ -36,5 +36,5 @@ jobs:
       with:
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
-        AWS_S3_BUCKET: mirthun-online-class
+        AWS_S3_BUCKET: 'mirthun-online-class'
         AWS_REGION: 'ap-south-1'
