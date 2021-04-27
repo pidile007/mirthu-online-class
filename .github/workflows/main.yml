@@ -34,7 +34,7 @@ jobs:
     - name: Temprary copy
       run: |
         mkdir s3-upload
-        cp -rf ../* s3-upload       
+        cp -rf ../mirthu-online-class/* s3-upload/
         
     - name: Upload S3
       uses: shallwefootball/upload-s3-action@v1.1.3
