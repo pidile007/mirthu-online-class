@@ -34,6 +34,7 @@ jobs:
     - name: Temprary copy
       run: |
         mkdir s3-upload
+        cd ../
         cp -rf * s3-upload       
         
     - name: Upload S3
