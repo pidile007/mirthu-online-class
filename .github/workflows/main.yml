@@ -36,7 +36,7 @@ jobs:
       with:
         milliseconds: 500
         s3-bucket-name: ${{ secrets.S3_BUCKET_NAME }}
-        folder: mirthu-online-class
+        folder: ./index.html
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
         AWS_REGION: 'ap-south-1'
