@@ -32,13 +32,13 @@ jobs:
 
         
     - name: Upload S3
-      uses: tpaschalis/s3-cp-action@v0.2.0
+      uses: RandhirMSingh/S3Manager@main
       with:
-        args: --recursive --paths ./index.html
+        args: --recursive
       env:
         FILE: ./index.html
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
         AWS_REGION: 'ap-south-1'
-        AWS_S3_BUCKET: mirthun-online-class
+        AS3_BUCKET: mirthun-online-class
 
