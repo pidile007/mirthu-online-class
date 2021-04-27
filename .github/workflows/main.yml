@@ -36,4 +36,4 @@ jobs:
         aws_key_id: ${{ secrets.aws_Key_id }}
         aws_secret_access_key: ${{ secrets.aws_secret_key }}
         aws_bucket: mirthun-online-class
-        source_dir: /index.html
+        source_dir: index.html
