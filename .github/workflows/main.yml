@@ -30,23 +30,17 @@ jobs:
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
         
+        
+    - name: Temprary copy
+      run: |
+        mkdir s3-upload
+        cp -rf * s3-upload       
+        
     - name: Upload S3
       uses: shallwefootball/upload-s3-action@v1.1.3
       with:
         aws_key_id: ${{ secrets.aws_Key_id }}
         aws_secret_access_key: ${{ secrets.aws_secret_key }}
         aws_bucket: mirthun-online-class
-        source_dir: assets
-        
-    - name: Upload S3 via aws cli
-      shell: bash
-      env:
-        aws_key_id: ${{ secrets.aws_Key_id }}
-        aws_secret_access_key: ${{ secrets.aws_secret_key }}
-        aws_s3_bucket: mirthun-online-class
-      run: |
-        sudo apt-get update && sudo apt-get -y install awscli
-        aws configure set aws_access_key_id $aws_key_id
-        aws configure set aws_secret_access_key $aws_secret_access_key
-        aws configure set default.region ap-south-1
-        aws s3 . s3://$aws_s3_bucket/
+        source_dir: s3-upload
+
