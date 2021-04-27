@@ -32,14 +32,10 @@ jobs:
 
         
     - name: Upload to S3
-      uses: and-cru/actions-s3-static-upload@v12
+      uses: awact/s3-action@0.1.1
       with:
-        args: --recursive
-      env:
-        FILE: ./index.html
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
         AWS_REGION: 'ap-south-1'
-        s3-bucket-name: mirthun-online-class
-        folder: build
+        AWS_S3_BUCKET: mirthun-online-class
 
