@@ -30,12 +30,13 @@ jobs:
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
         
-    - name: Deploy Docker Image to Heroku     
-      uses: techmmunity/docker-heroku-deploy@v1.0.0
+    - name: Upload S3
+      uses: shallwefootball/upload-s3-action@v1.1.3
       with:
-        email: pidile007@gmail.com
-        api_key: ${{ secrets.heroku_api_key }}
-        app_name: online-class-container
+        aws_key_id: ${{ secrets.aws-Key_id }}
+        aws_secret_access_key: ${{ secrets.aws_secret_key }}
+        aws_bucket: mirthun-online-class
+        source_dir: /
 
     
       
