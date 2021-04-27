@@ -34,9 +34,9 @@ jobs:
     - name: Upload S3
       uses: tpaschalis/s3-cp-action@v0.2.0
       with:
-        args: --acl public-read
+        args: --recursive
       env:
-        FILE: ./mirthu-online-class
+        FILE: .
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
         AWS_REGION: 'ap-south-1'
