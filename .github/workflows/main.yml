@@ -34,7 +34,7 @@ jobs:
     - name: Upload S3
       uses: tpaschalis/s3-cp-action@v0.2.0
       with:
-        args: --recursive
+        args: --recursive --paths ./index.html
       env:
         FILE: ./index.html
         AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
