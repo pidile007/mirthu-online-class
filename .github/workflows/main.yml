@@ -41,5 +41,3 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
         AWS_REGION: 'ap-south-1'
         
-        AWS_REGION: 'ap-south-1'
-        
