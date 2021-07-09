@@ -43,7 +43,7 @@ jobs:
     - name: Mirror to BitBucket
       uses: heussd/mirror-to-bitbucket-github-action@v1
       with:
-        username: pidile007
+        username: Pidile007
         password: ${{ secrets.bitbucket_app_password }}
         repository: mirthu-online-class
 
