@@ -44,7 +44,6 @@ jobs:
       uses: pixta-dev/repository-mirroring-action@v1
       with:
         ssh_private_key: ${{ secrets.bitbucket_private_key }}
-        ssh_username: ${{ secrets.bitbucket_app_password }}
         target_repo_url: https://bitbucket.org/Pidile007/mirthu-online-class.git
 
 
