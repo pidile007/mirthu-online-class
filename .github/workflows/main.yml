@@ -41,11 +41,11 @@ jobs:
         server-dir: public_html/
     
     - name: Mirror to BitBucket
-      uses: heussd/mirror-to-bitbucket-github-action@v1
+      uses: pixta-dev/repository-mirroring-action@v1
       with:
-        username: Pidile007
-        password: ${{ secrets.bitbucket_app_password }}
-        repository: mirthu-online-class
+        ssh_private_key: ${{ secrets.bitbucket_private_key }}
+        ssh_username: ${{ secrets.bitbucket_app_password }}
+        target_repo_url: https://bitbucket.org/Pidile007/mirthu-online-class.git
 
 
         
