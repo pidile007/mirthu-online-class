@@ -1,29 +1,4 @@
-# README #
+#  online class google meet portal.
+Sign out from all google ID and Login with kids ID from any browser and browse http://mirthun-online-class.s3-website.ap-south-1.amazonaws.com/ or https://mirthu-online-class.000webhostapp.com/ 
 
-This README would normally document whatever steps are necessary to get your application up and running.
-
-### What is this repository for? ###
-
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+To use different code, clone repo to local and update code, subjet name in line # 96-151 and copy time table images to a"ssets/img/time_table.jpg", then browser locally.
