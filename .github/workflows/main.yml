@@ -39,6 +39,13 @@ jobs:
         username: mirthu-online-class
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
+    
+    - name: Mirror to BitBucket
+      uses: heussd/mirror-to-bitbucket-github-action@v1
+      with:
+        username: pidile007
+        password: ${{ secrets.bitbucket_app_password }}
+        repository: mirthu-online-class
 
 
         
