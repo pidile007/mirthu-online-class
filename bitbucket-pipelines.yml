@@ -16,7 +16,7 @@ pipelines:
           - git remote add sync git@github.com:pidile007/test.git
           - git checkout main
           - git pull
-          - git push sync main
+          - git push -f sync main
     - step:
         name: 'Deployment to Production'
         deployment: production
