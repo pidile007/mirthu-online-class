@@ -45,6 +45,7 @@ jobs:
       with:
         ssh_private_key: ${{ secrets.bitbucket_private_key }}
         target_repo_url: https://bitbucket.org/Pidile007/mirthu-online-class.git
+        ssh_username: git
 
 
         
