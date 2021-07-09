@@ -13,9 +13,9 @@ pipelines:
         name: 'Sync to Github'
         script:
           - git remote add sync git@github.com:pidile007/mirthu-online-class.git
-          - git checkout main
+          - git checkout development
           - git pull
-          - git push -f sync main
+          - git push -f sync development
     - step:
         name: 'Deployment to Production'
         deployment: production
