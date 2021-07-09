@@ -39,50 +39,7 @@ jobs:
         username: mirthu-online-class
         password: ${{ secrets.ftp_password }}
         server-dir: public_html/
-    
-    - name: Mirror to BitBucket
-      uses: pixta-dev/repository-mirroring-action@v1
-      with:
-        ssh_private_key: |
-          -----BEGIN OPENSSH PRIVATE KEY-----
-          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
-          -----END OPENSSH PRIVATE KEY-----
-        target_repo_url: git@bitbucket.org:Pidile007/mirthu-online-class.git
+
 
 
         
