@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W07SSNSJBQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W07SSNSJBQ');
+  </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
   <link rel="shortcut icon" href="favicon.ico">
   
-    <title>Happy Holiday - Mirthun Online class</title>
+    <title>version</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -25,33 +34,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <script>
-      var c=0;
-      var t;
-      var poping=0;
-      function displayFireworks() {
-          createFirework(25,187,7,1,null,null,null,null,false,true);
-          t=setTimeout(function(){displayFireworks()},200);
-      }
-      function doTimer() {
-      if (!poping) {
-        poping=1;
-        displayFireworks();
-        }
-      }
-      function stopCount() {
-      clearTimeout(t);
-      poping=0;
-      }
-      $( window ).load(function() {
-        displayFireworks();
-      });
-      </script>
-
-    <link rel="stylesheet" type="text/css" href="assets/css/fireworks.css" media="screen" />
-    <script type="text/javascript" src="assets/js/soundmanager2-nodebug-jsmin.js"></script>
-    <script type="text/javascript" src="assets/js/fireworks.js"></script>
-	
+    <!-- <h3 style="color:blue;"><marquee behavior="scroll" direction="left">Annual Holidays started. Happy Holidays !!!</marquee></h3> -->
     <script>
       function startTime() {
         var today = new Date();
@@ -71,62 +54,8 @@
       </script>
 
   </head>
-  <body  onload="displayFireworks()">
+  <body  onload="startTime()">
     
-    
-    <div class="navbar-header">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
-        <span class="lni-menu"></span>
-      </button>
-      <a href="https://www.vivekamschoolcbse.edu.in" target="_blank class="navbar-brand"><img src="assets/img/vivekam6.png" width="200" height="50" align="right" alt=""></a>
-	  
-	  <div id="fireworks-template">
-        <div id="fw" class="firework"></div>
-        <div id="fp" class="fireworkParticle"><img src="assets/img/particles.gif" alt="" /></div>
-      </div>
-    <div id="fireContainer"></div>
-
-
-    
-
-
-
-
-    <section id="services" class="section-padding" >
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 col-lg-8 col-xs-12 text-center">
-            
-            <h1 class="section-title">
-              MIRTHUN D
-            </h1>
-            <h3 class="subtitle">
-              <b>Grade II  APJ</b>
-            </h3>
-            <br><h5  id="txt" class="subtitle"><b> Time:</b>        
-              <h5 id="demo" class="subtitle"><b>Date:</b></h5>
-              <h5 id="demo" ></h5>
-              <script>
-                var d = new Date();
-                document.getElementById("demo").innerHTML = d.toLocaleDateString();;
-                </script>
-              <h5 id="daydemo" class="subtitle"><b>Day:</b></h5>
-              <h3 id="daydemo"></h2>
-              <script>
-                var today = new Date();
-                var day = today.getDay();
-                var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
-                document.getElementById("daydemo").innerHTML = (daylist[day]);;
-                </script><br>       
-          </div>
-          </div>          
-        </div>
-        
-        <h3 style="color:blue;"><marquee behavior="scroll" direction="left">Annual Holidays started. Happy Holidays !!!</marquee></h3>
-
      
 
     <!-- Footer Section Start -->
@@ -136,7 +65,7 @@
           <div class="col-md-12">
             <div class="footer-text text-center">
               <a href="index.html"><img src="assets/img/DM.JPG" class="img-round" width="50" height="50" alt=""></a>
-              <p>Copyright © 2020 - 2021 | D S M </p>
+              <p>Copyright © 2020 - 2021 | D S M | V 2.10 </p>
               <!-- <p style="color:rgb(24, 24, 24);">V 2.9</p> -->
             </div>
           </div>
