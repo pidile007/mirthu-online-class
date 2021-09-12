@@ -50,11 +50,11 @@ pipelines:
             - docker
 
     # The following deployment steps will be executed for each pipeline run. To configure your steps and conditionally deploy see https://support.atlassian.com/bitbucket-cloud/docs/configure-bitbucket-pipelinesyml/
-    - step:
-        name: 'Sync to Github'
-        script:
-          - git remote add sync git@github.com:pidile007/mirthu-online-class.git
-          - git checkout main
-          - git pull
-          - git push -f sync main
+      - step:
+          name: 'Sync to Github'
+          script:
+            - git remote add sync git@github.com:pidile007/mirthu-online-class.git
+            - git checkout main
+            - git pull
+            - git push -f sync main
 
