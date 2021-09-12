@@ -10,9 +10,13 @@ pipelines:
         - step:
             name: Build and Test
             script:
-              - IMAGE_NAME=$BITBUCKET_REPO_SLUG
-              - docker build . --file Dockerfile --tag pidile007/${IMAGE_NAME}
-              - docker push pidile007/${IMAGE_NAME}
+            - echo ${DOCKERHUB_PASSWORD} | docker login --username "$DOCKERHUB_USERNAME" --password-stdin
+            - IMAGE_NAME=$BITBUCKET_REPO_SLUG
+            - VERSION="${BITBUCKET_BUILD_NUMBER}"
+            - IMAGE=pidile007/${IMAGE_NAME}
+            - docker build . --file Dockerfile --tag pidile007/${IMAGE_NAME}
+            - docker tag "${IMAGE_NAME}" "${IMAGE}:${VERSION}"
+            - docker push "${IMAGE}:${VERSION}"
             services:
               - docker
             caches:
