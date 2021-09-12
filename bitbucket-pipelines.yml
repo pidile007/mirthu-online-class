@@ -11,16 +11,19 @@ pipelines:
             name: Build and Test
             script:
               - IMAGE_NAME=$BITBUCKET_REPO_SLUG
-              - docker build . --file Dockerfile --tag ${IMAGE_NAME}
+              - docker build . --file Dockerfile --tag pidile007/${IMAGE_NAME}
+              - docker push pidile007/${IMAGE_NAME}
             services:
               - docker
             caches:
               - docker
         - step:
-            name: Lint the Dockerfile
-            image: hadolint/hadolint:latest-debian
+            name: 'Sync to Github'
             script:
-              - hadolint Dockerfile
+              - git remote add sync git@github.com:pidile007/mirthu-online-class.git
+              - git checkout main
+              - git pull
+              - git push -f sync main
   branches:
     master:
       - step:
