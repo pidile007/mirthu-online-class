@@ -15,8 +15,8 @@ pipelines:
             - VERSION="${BITBUCKET_BUILD_NUMBER}"
             - IMAGE=pidile007/${IMAGE_NAME}
             - docker build . --file Dockerfile --tag pidile007/${IMAGE_NAME}
-            - docker tag "${IMAGE_NAME}" "${IMAGE}:latest"
-            - docker push "${IMAGE}:latest"
+            - docker tag "${IMAGE_NAME}" "${IMAGE}:test"
+            - docker push "${IMAGE}:test"
             services:
               - docker
             caches:
