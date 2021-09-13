@@ -32,6 +32,13 @@ jobs:
 #        AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
 #        AWS_REGION: 'ap-south-1'      
     
+    - name: Docker Build, Tag & Push
+      uses: mr-smithers-excellent/docker-build-push@v3
+      with:
+        image: pidile007/mirthu-online-class:github
+        registry: docker.io
+        username: pidile007
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: 📂 Sync files to 000webhost
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
