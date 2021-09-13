@@ -36,7 +36,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v3
       with:
         image: pidile007/mirthu-online-class
-        tags: github
+        tag: github
         registry: docker.io
         username: pidile007
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
