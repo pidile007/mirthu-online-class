@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W07SSNSJBQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-W07SSNSJBQ');
+  </script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -99,7 +108,7 @@
               <div class="icon">
                 <i class="lni-book"></i>
               </div>
-              <h3><a href="https://meet.google.com/fgb-axtk-ibn?pli=1&authuser=0" target="_blank">हिन्दी</a><p>fgb-axtk-ibn</p></h3>
+              <h3><a href="https://meet.google.com/mjg-gmyb-obx?pli=1&authuser=0" target="_blank">English</a><p>mjg-gmyb-obx</p></h3>
             </div>
           </div> 
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="300">
@@ -107,7 +116,7 @@
               <div class="icon">
                 <i class="lni-bullhorn"></i>
               </div>
-              <h3><a href="https://meet.google.com/iuf-ftrz-wfh?pli=1&authuser=0" target="_blank">English</a><p>iuf-ftrz-wfh</p></h3>
+              <h3><a href="https://meet.google.com/rru-xrbi-qut?pli=1&authuser=0" target="_blank">தமிழ் / Test</a><p>rru-xrbi-qut</p></h3>
             </div>
           </div> 
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -115,7 +124,7 @@
               <div class="icon">
                 <i class="lni-bullhorn"></i>
               </div>
-              <h3><a href="https://meet.google.com/ron-ivbo-gtc?pli=1&authuser=0" target="_blank">தமிழ் / Test</a><p>ron-ivbo-gtc</p></h3>
+              <h3><a href=https://meet.google.com/wuu-tsui-jkt?pli=1&authuser=0" target="_blank">Maths</a><p>wuu-tsui-jkt</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -123,7 +132,7 @@
               <div class="icon">
                 <i class="lni-bulb"></i>
               </div>
-              <h3><a href="https://meet.google.com/pte-gxhc-nwf?pli=1&authuser=0" target="_blank">Games</a><p>pte-gxhc-nwf</p></h3>
+              <h3><a href="https://meet.google.com/ega-xiwf-mgv?pli=1&authuser=0" target="_blank">हिन्दी</a><p>ega-xiwf-mgv</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -131,7 +140,7 @@
               <div class="icon">
                 <i class="lni-brush"></i>
               </div>
-              <h3><a href=https://meet.google.com/jwc-amwx-wix?pli=1&authuser=0" target="_blank">Maths</a><p>jwc-amwx-wix</p></h3>
+              <h3><a href="https://meet.google.com/vir-phws-egw?pli=1&authuser=0" target="_blank">Games</a><p>vir-phws-egw</p></h3>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
@@ -139,7 +148,7 @@
               <div class="icon">
                 <i class="lni-book"></i>
               </div>
-              <h3><a href="https://vivekamcbse.meandmyschool.in/" target="_blank" >Me & My School</a></h3>
+              <h3><a href="https://vivekamcbse.meandmyschool.in/" target="_blank" >Me & My School</a><p>vivekamcbse.meandmyschool.in</p></h3>
             </div>
           </div>
          </div>
@@ -161,7 +170,7 @@
             <div class="footer-text text-center">
               <a href="index.html"><img src="assets/img/DM.JPG" class="img-round" width="50" height="50" alt=""></a>
               <p>Copyright © 2020 - 2021 | D S M </p>
-              <p style="color:rgb(24, 24, 24);">V 2.7</p>
+              <!-- <p style="color:rgb(24, 24, 24);">V 2.9</p> -->
             </div>
           </div>
         </div>
