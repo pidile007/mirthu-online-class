@@ -22,15 +22,15 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
         
-#    - name: 📂 S3 Sync
-#      uses: jakejarvis/s3-sync-action@master
-#      with:
-#        args: --acl public-read --follow-symlinks --delete
-#      env:
-#        AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
-#        AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
-#        AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
-#        AWS_REGION: 'ap-south-1'      
+    - name: 📂 S3 Sync
+      uses: jakejarvis/s3-sync-action@master
+      with:
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.S3_BUCKET_NAME }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.aws_Key_id }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_key }}
+        AWS_REGION: 'ap-south-1'      
     
     - name: Docker Build, Tag & Push
       uses: mr-smithers-excellent/docker-build-push@v3
