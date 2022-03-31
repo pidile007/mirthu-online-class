@@ -9,14 +9,14 @@
     gtag('js', new Date());
 
     gtag('config', 'G-W07SSNSJBQ');
-  </script>
+  </script>  
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
   <link rel="shortcut icon" href="favicon.ico">
   
-    <title>Mirthun Online class</title>
+    <title>Happy Holiday - Mirthun Online class</title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -34,7 +34,33 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <!-- <h3 style="color:blue;"><marquee behavior="scroll" direction="left">Annual Holidays started. Happy Holidays !!!</marquee></h3> -->
+    <script>
+      var c=0;
+      var t;
+      var poping=0;
+      function displayFireworks() {
+          createFirework(25,187,7,1,null,null,null,null,false,true);
+          t=setTimeout(function(){displayFireworks()},200);
+      }
+      function doTimer() {
+      if (!poping) {
+        poping=1;
+        displayFireworks();
+        }
+      }
+      function stopCount() {
+      clearTimeout(t);
+      poping=0;
+      }
+      $( window ).load(function() {
+        displayFireworks();
+      });
+      </script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/fireworks.css" media="screen" />
+    <script type="text/javascript" src="assets/js/soundmanager2-nodebug-jsmin.js"></script>
+    <script type="text/javascript" src="assets/js/fireworks.js"></script>
+	
     <script>
       function startTime() {
         var today = new Date();
@@ -54,7 +80,7 @@
       </script>
 
   </head>
-  <body  onload="startTime()">
+  <body  onload="displayFireworks()">
     
     
     <div class="navbar-header">
@@ -64,7 +90,13 @@
         <span class="lni-menu"></span>
         <span class="lni-menu"></span>
       </button>
-      <a href="https://www.vivekamschoolcbse.edu.in" target="_blank class="navbar-brand"><img src="assets/img/vivekam2.jpg" width="200" height="50" align="right" alt=""></a>
+      <a href="https://www.vivekamschoolcbse.edu.in" target="_blank class="navbar-brand"><img src="assets/img/vivekam6.png" width="200" height="50" align="right" alt=""></a>
+	  
+	  <div id="fireworks-template">
+        <div id="fw" class="firework"></div>
+        <div id="fp" class="fireworkParticle"><img src="assets/img/particles.gif" alt="" /></div>
+      </div>
+    <div id="fireContainer"></div>
 
 
     
@@ -81,7 +113,7 @@
               MIRTHUN D
             </h1>
             <h3 class="subtitle">
-              <b>Grade II APJ</b>
+              <b>Grade II  APJ</b>
             </h3>
             <br><h5  id="txt" class="subtitle"><b> Time:</b>        
               <h5 id="demo" class="subtitle"><b>Date:</b></h5>
@@ -102,63 +134,7 @@
           </div>          
         </div>
         
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-book"></i>
-              </div>
-              <h3><a href="https://meet.google.com/ihv-okbt-jpj?pli=1&authuser=0" target="_blank">English</a><p>ihv-okbt-jpj</p></h3>
-            </div>
-          </div> 
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="300">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-bullhorn"></i>
-              </div>
-              <h3><a href="https://meet.google.com/rru-xrbi-qut?pli=1&authuser=0" target="_blank">தமிழ் / Test</a><p>rru-xrbi-qut</p></h3>
-            </div>
-          </div> 
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-bullhorn"></i>
-              </div>
-              <h3><a href=https://meet.google.com/wuu-tsui-jkt?pli=1&authuser=0" target="_blank">Maths</a><p>wuu-tsui-jkt</p></h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-bulb"></i>
-              </div>
-              <h3><a href="https://meet.google.com/ega-xiwf-mgv?pli=1&authuser=0" target="_blank">हिन्दी</a><p>ega-xiwf-mgv</p></h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-brush"></i>
-              </div>
-              <h3><a href="https://meet.google.com/vir-phws-egw?pli=1&authuser=0" target="_blank">Games</a><p>vir-phws-egw</p></h3>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-xs-12 fadeInUp" data-animation="fadeInUp" data-delay="600">
-            <div class="services-item">
-              <div class="icon">
-                <i class="lni-book"></i>
-              </div>
-              <h3><a href="https://vivekamcbse.meandmyschool.in/" target="_blank" >Me & My School</a><p>vivekamcbse.meandmyschool.in</p></h3>
-            </div>
-          </div>
-         </div>
-      </div>
-    </section>
-    <br><h2 class="section-title">
-      Time Table
-    </h2>
-    <br><img src="assets/img/time_table.jpg"  alt="Not Found" onerror=this.src="https://res.cloudinary.com/pidile/image/upload/v1623662723/time_table.jpg" class="center">
-
+        <h3 style="color:blue;"><marquee behavior="scroll" direction="left">Annual Holidays started. Happy Holidays !!!</marquee></h3>
 
      
 
